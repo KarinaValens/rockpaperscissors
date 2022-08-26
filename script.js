@@ -101,15 +101,18 @@ function winner() {
     } else {
         document.querySelector("#lose").classList.remove("hidden");
     }
-
+    reset();
 }
 
-
-
-function restar() {
-    player.classList.value = "";
-    computer.classList.value = "";
-    document.querySelector("html").offsetHeight;
-    player.classList.add("player");
-    computer.classList.add("player");
-}
+function reset() {
+    setTimeout(function () {
+        player.classList.value = "";
+        computer.classList.value = "";
+        document.querySelector("html").offsetHeight;
+        document.querySelector("#draw").classList.add("hidden");
+        document.querySelector("#win").classList.add("hidden");
+        document.querySelector("#lose").classList.add("hidden");
+        player.classList.add("player");
+        computer.classList.add("player");
+    }, 2000), true;
+};
