@@ -105,4 +105,6 @@ function reset() {
         player.classList.add("player");
         computer.classList.add("player");
     }, 2000), true;
+
+    //while(resultList.hasChildNodes(){resultList.removeChild(resultList.firsElementChild)})
 };
